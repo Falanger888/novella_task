@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница Сайта!!!</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Фиксированая шапка сайта -->
+    <header>
+        <ul>
+            <img class="logo_section_one" src="img/logo.svg" alt="logo">
+            <li><a href="#">ЗАСТРОЙЩИК</a></li>
+            <li><a href="#">КВАРТИРЫ</a></li>
+            <li><a href="#">ИПОТЕКА</a></li>
+            <li><a href="#">ДОКУМЕНТЫ</a></li>
+            <li><a href="#">КОНТТАКТЫ</a></li>
+            <li>
+                <div class="flex div_phone_header">
+                    <img src="img/header_phone.svg" alt="phone_icon">
+                    <p class="phone_header">+7 391 <b>271-40-20</b></p>
+                </div>
+            </li>
+        </ul>
+        <!-- Под телефон -->
+        <div class="phone_header ">
+            <img class="logo_phone phone" src="img/logo_phone.svg" alt="logo_phone">
+            <img class="telephone phone" src="img/phone.svg" alt="phone">
+            <img id="open_menu_burger" class="phone burger" src="img/burger.svg" alt="menu">
+            <img id="close_menu" class="phone close_burger_icon" src="img/close_menu.svg" alt="close_menu">
+
+
+            <div id="burger_menu" class="phone burger_menu_phone">
+                <ul class="burger_ul">
+                    <li>ЗАСТРОЙЩИК</li>
+                    <li>КВАРТИРЫ</li>
+                    <li>ИПОТЕКА</li>
+                    <li>ДОКУМЕНТЫ</li>
+                    <li>КОНТАКТЫ</li>
+                </ul>
+
+                <div class="down_menu">
+                    <div class="flex">
+                        <img class="phone map_footer" src="img/map_footer.svg" alt="map_footer">
+                        <p class="footer_text_one">Офис продаж:</p>
+                    </div>
+                    <p class="footer_text_two">
+                        <span style="color: rgba(113, 181, 131, 1);">+7 391</span>
+                        <span style="color: rgba(191, 216, 195, 1);">271-40-20</span>
+                    </p>
+                    <p class="footer_text_three">г. Красноярск,<br>
+                        ул. Молокова д. 1 копр. 1, оф. 178, 1 этаж</p>
+                    <p class="footer_text_four">График работы офиса продаж:</p>
+                    <p class="footer_text_five">
+                        В будни с 9:00 до 18:00 <br>
+                        Суббота, воскресенье выходной
+                    </p>
+                    <div>
+                        <img src="img/vk.svg" alt="">
+                        <img src="img/youtube.svg" alt="">
+                        <img src="img/odnkl.svg" alt="">
+                        <img src="img/telegram.svg" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- Первая секция -->
+    <section class="section_one">
+        <div class="div_text_one">
+            <p class="section_one_text_one">Спеццена: <br>готовая 4-комн<br> за 10,8 млн</p>
+        </div>
+        <div class="div_text_two">
+            <p class="section_one_text_two">рядом с центром Красноярска</p>
+        </div>
+        <div class="div_form_down">
+
+            <button class="button_form" id="open_modal">
+                <p>УЗНАТЬ БОЛЬШЕ</p>
+            </button>
+
+            <img id="down" class="img_down" src="img/mouse_down.svg" alt="mouse_down">
+            <p class="text_down">Novella начинается на улице Копылова, 19.
+                Рядом с центром Красноярска, в красивом месте с видом на город и Енисей.</p>
+
+
+        </div>
+        <!-- Модальное окно -->
+        <div class="modal_shadow" id="modal">
+            <div class="modal">
+                <img id="exit_modal" class="exit_modal" src="img/krest.svg" alt="exit_modal">
+                <div>
+                    <form class="form_info" action="#" method="#">
+
+                        <input type="text" placeholder="Ваше имя">
+
+                        <input type="text" placeholder="Телефон">
+                        <div class="flex">
+                            <!-- Скрыли основной ради кастомного -->
+                            <input class="checkbox_form_info" type="checkbox" id="happy">
+                            <!-- Кастомный чекбокс -->
+                            <label for="happy"></label>
+                            <p>Я согласен на обработку моих персональных данных</p>
+                        </div>
+
+
+                        <button type="submit" class="button_form_two" id="open_modal">
+                            <p>ОТПРАВИТЬ</p>
+                        </button>
+
+                    </form>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!-- Зеленый фон ниже секции, как бы соединяющий первую и вторую -->
+    <div class="perehod">
+        <p class="text_perehod">Каждый из нас — автор истории собственной жизни. А чтобы случиться,<br>
+            любой истории нужно подходящее место.
+
+
+            В Красноярске мы нашли идеальное<br> место для по-настоящему
+            счастливого сюжета. Это Дом Novella.</p>
+    </div>
+    <!-- Вторая секция преимущества-->
+    <section class="section_two" id="element">
+        <!-- Кнопка вверх -->
+        <div class="only_up phone_none">
+            <img src="img/only_up.svg" alt="up">
+        </div>
+        <!-- Блок в секции -->
+        <div class="section_block_two">
+
+            <!-- первый блок -->
+            <div class="flex margin_top phone_adapt">
+                <img class="advantage phone_none" src="img/advantage_two.svg" alt="advantage">
+                <img class="phone phone_adpt_adv" src="img/phone_adpt_adv.svg" alt="phone_adapt_adv">
+                <div>
+                    <div class="phone_flex">
+                        <img class="icon_adv" src="img/adv_icon_one.svg" alt="adv_icon">
+                        <p class="title_adv">БЛИЗОСТЬ К ЦЕНТРУ ГОРОДА</p>
+                    </div>
+
+                    <p class="text_adv">Дом расположен в непосредственной близости к центру города, который открывает
+                        массу
+                        возможностей для отдыха и культурного времяпровождения. Театры, кафе и рестораны, набережная
+                        реки Енисей, Центральный парк, да и просто прогулки по оживленным улицам центра станут
+                        неотъемлемой частью вашей жизни. Ведь все близко.</p>
+                </div>
+            </div>
+
+
+            <!-- второй блок -->
+            <div class="flex margin_top phone_adapt  phone_flex_reverse">
+                <div>
+                    <div class="phone_flex">
+                        <img class="icon_adv_2" src="img/adv_icon_two.svg" alt="adv_icon">
+                        <p class="title_adv_2">ГОТОВАЯ <br> ИНФРАСТРКТУРУА</p>
+                    </div>
+
+                    <p class="text_adv_2">Рядом 7 частных и муниципальных детских садов. 5 школ, лицеев и гимназий. В
+                        их числе престижная университетская гимназия «Универс». В пешеходной доступности два торговых
+                        центра «Апельсин» и «Славянский», спортивный комплекс «Экселент» с бассейном 25 метров.</p>
+                </div>
+                <img class="advantage_2" src="img/advantage_one.svg" alt="advantage">
+            </div>
+
+
+            <!-- третий блок -->
+            <div class="flex margin_top phone_adapt">
+
+                <!-- Почему то не работает, посмотрю может просто картинку воткну -->
+                <iframe src="https://www.youtube.com/watch?v=B5RLsVj4y6E"></iframe>
+                <div>
+                    <div class="phone_flex">
+                        <img class="icon_adv" src="img/adv_icon_three.svg" alt="adv_icon">
+                        <p class="title_adv">ЖИЛОЙ КОМПЛЕКС С ВЫСОТЫ</p>
+                    </div>
+
+                    <p class="text_adv">Любоваться Novella можно с самых разных точек города. Дом прекрасно виден даже в
+                        темное время суток — сложно не заметить красивый светящийся логотип. В видео мы постарались
+                        передать атмосферу жилого комплекса!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Третья секция картовчкм -->
+    <section class="section_three">
+        <div class="flex">
+            <p class="text_section_three_one">КЛАССИЧЕСКИЙ СЮЖЕТ</p>
+            <p class="text_section_three_two phone_none">Novella — дом в лучших<br> традициях комфорт-класса</p>
+        </div>
+
+        <div class="cart">
+            <img class="img_cart phone img_cart_phone" src="img/tehnolog.svg" alt="img_tehno">
+            <p class="phone text_cart_phone">Novella — дом в лучших традициях комфорт-класса</p>
+            <div class="carta_one">
+
+                <div class="flex">
+                    <img class="classik_icon_one" src="img/технология.svg" alt="icon_classik">
+
+                    <p class="title_classik">Технология <br> строительства</p>
+                </div>
+                <p class="text_cart">
+                    Дом построен из кирпича, ширина стен — 1 метр. Чтобы Novella гармонично вписалась в архитектурный
+                    ансамбль города, использован навесной фасад в пастельных зеленых оттенках.
+                </p>
+                <img class="img_cart phone_none " src="img/tehnolog.svg" alt="img_tehno">
+            </div>
+            <div class="carta_one">
+                <div class="flex">
+                    <img class="classik_icon_two" src="img/безопасность.svg" alt="icon_classik">
+                    <p class="title_classik">Безопасный <br>двор</p>
+                </div>
+                <p class="text_cart">
+                    У дома оборудована воркаут-зона и две игровые площадки: внутри двора расположена площадка для
+                    малышей, рядом — большая площадка для детей постарше. От улицы Копылова они закрыты шумоподавляющим
+                    ограждением.
+                </p>
+                <img class="img_cart phone_none" src="img/guard.svg" alt="img_tehno">
+            </div>
+            <div class="carta_one">
+                <div class="flex">
+                    <img class="classik_icon_three" src="img/эстетика.svg" alt="icon_classik">
+                    <p class="title_classik_three">Подъезды</p>
+                </div>
+                <p class="text_cart">
+                    Дом построен из кирпича, ширина стен — 1 метр. Чтобы Novella гармонично вписалась в архитектурный
+                    ансамбль города, использован навесной фасад в пастельных зеленых оттенках.
+                </p>
+                <img class="img_cart phone_none" src="img/Estetika.svg" alt="img_tehno">
+            </div>
+
+
+
+        </div>
+        <div></div>
+    </section>
+
+
+    <section class="section_four">
+
+        <div class="flex phone_section_five_flex">
+            <p class="text_four_section_one">АВТОРСКОЕ РЕШЕНИЕ</p>
+            <p class="text_four_section_two">Novella вдохновляет <br>
+                дизайнеров</p>
+        </div>
+
+
+
+
+
+
+        <div class="slider_box_fff">
+
+
+            <!-- Картинки со стрелками -->
+            <div class="slider-box">
+
+                <!-- Основой слайдер с каритнками -->
+                <div>
+                    <img id="left" src="img/left.svg" alt="left">
+                </div>
+                <div class="slider">
+                    <img class="image_slider block-slide" src="img/slide1.svg" alt="slide1">
+                    <img class="image_slider" src="img/slide2.svg" alt="slide2">
+                    <img class="image_slider" src="img/slide3.svg" alt="slide3">
+                    <img class="image_slider" src="img/slide4.svg" alt="slide4">
+                    <img class="image_slider" src="img/slide5.svg" alt="slide5">
+                </div>
+                <div>
+                    <img id="right" src="img/right.svg" alt="right">
+                </div>
+            </div>
+
+
+            <!-- Навигация по слайдеру, пагинация -->
+            <div id="bottom" class="bottom">
+
+            </div>
+        </div>
+
+    </section>
+    <footer class="phone_footer_flex_revers">
+
+        <div class="margin_top">
+            <div class="flex">
+                <img class="phone_none" src="img/logo_footer.svg" alt="footer_logo">
+
+
+                <div>
+                    <div class="flex">
+                        <img class="phone map_footer" src="img/map_footer.svg" alt="map_footer">
+                        <p class="footer_text_one">Офис продаж:</p>
+                    </div>
+
+                    <p class="footer_text_two">
+                        <span style="color: rgba(113, 181, 131, 1);">+7 391</span>
+                        <span style="color: rgba(191, 216, 195, 1);">271-40-20</span>
+                    </p>
+                </div>
+            </div>
+            <p class="footer_text_three">г. Красноярск,<br>
+                ул. Молокова д. 1 копр. 1, оф. 178, 1 этаж</p>
+            <p class="footer_text_four">График работы офиса продаж:</p>
+            <p class="footer_text_five">
+                В будни с 9:00 до 18:00 <br>
+                Суббота, воскресенье выходной
+            </p>
+            <style>
+                .image_footer_svg {
+                    fill: rgba(113, 180, 130, 1);
+                    transition: 0.5s;
+                }
+
+                .image_footer_svg:hover {
+                    transition: 0.5s;
+                    fill: rgba(191, 216, 195, 1);
+                }
+
+                .margin_icon_footer>a {
+                    margin-right: 25px;
+                }
+
+                .margin_icon_footer {
+                    margin-top: 30px;
+                }
+
+                .footer_chek {
+                    margin-top: 30px;
+                    color: rgba(191, 216, 195, 1);
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+            </style>
+            <div class="flex margin_icon_footer">
+
+                <!-- Сылка на вк -->
+                <a href="">
+                    <div>
+                        <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle class="image_footer_svg" cx="22.0964" cy="22.0964" r="22.0964" fill="#71B482" />
+                            <path
+                                d="M33.3965 27.8016C33.3669 27.7379 33.3394 27.6851 33.3138 27.6429C32.8908 26.881 32.0824 25.9458 30.8891 24.8371L30.8639 24.8117L30.8513 24.7993L30.8385 24.7865H30.8257C30.2842 24.2702 29.9412 23.9231 29.7976 23.7454C29.5348 23.4068 29.4759 23.0641 29.6196 22.7169C29.721 22.4546 30.1022 21.9006 30.7621 21.0541C31.1092 20.6055 31.3842 20.246 31.5872 19.9751C33.0514 18.0285 33.6862 16.7845 33.4915 16.2428L33.4158 16.1162C33.365 16.04 33.2339 15.9703 33.0225 15.9067C32.8107 15.8433 32.5399 15.8328 32.2098 15.8751L28.5538 15.9003C28.4946 15.8793 28.41 15.8813 28.2998 15.9067C28.1898 15.9322 28.1347 15.9449 28.1347 15.9449L28.0711 15.9767L28.0206 16.0149C27.9783 16.0402 27.9317 16.0846 27.8809 16.1481C27.8303 16.2114 27.788 16.2856 27.7542 16.3702C27.3562 17.3943 26.9037 18.3464 26.3957 19.2265C26.0826 19.7513 25.795 20.2061 25.5323 20.5912C25.27 20.9762 25.05 21.2598 24.8724 21.4417C24.6946 21.6236 24.534 21.7694 24.3899 21.8796C24.246 21.9898 24.1361 22.0363 24.06 22.0193C23.9838 22.0023 23.9119 21.9854 23.844 21.9685C23.7255 21.8922 23.6303 21.7886 23.5585 21.6574C23.4864 21.5263 23.4378 21.3612 23.4124 21.1623C23.3872 20.9633 23.3722 20.7921 23.368 20.6481C23.364 20.5044 23.3658 20.3011 23.3744 20.0387C23.3832 19.7763 23.3872 19.5987 23.3872 19.5056C23.3872 19.1839 23.3934 18.8348 23.406 18.4582C23.4188 18.0816 23.4292 17.7832 23.4379 17.5634C23.4465 17.3433 23.4505 17.1105 23.4505 16.8651C23.4505 16.6196 23.4356 16.4271 23.406 16.2874C23.3769 16.1479 23.3321 16.0125 23.2731 15.8812C23.2137 15.75 23.1268 15.6485 23.0128 15.5765C22.8986 15.5046 22.7566 15.4475 22.5876 15.405C22.139 15.3035 21.5678 15.2486 20.8736 15.2401C19.2996 15.2232 18.2881 15.3248 17.8396 15.5449C17.6619 15.6379 17.501 15.7649 17.3572 15.9256C17.2049 16.1118 17.1836 16.2135 17.2936 16.2302C17.8015 16.3063 18.161 16.4883 18.3726 16.776L18.4489 16.9285C18.5082 17.0385 18.5674 17.2332 18.6267 17.5125C18.6859 17.7917 18.7241 18.1006 18.7409 18.439C18.7831 19.0569 18.7831 19.5858 18.7409 20.0258C18.6985 20.466 18.6585 20.8087 18.6203 21.0541C18.5821 21.2996 18.525 21.4985 18.4489 21.6508C18.3726 21.8031 18.3219 21.8962 18.2965 21.93C18.2711 21.9638 18.2499 21.9851 18.2331 21.9934C18.1231 22.0356 18.0087 22.0571 17.8903 22.0571C17.7717 22.0571 17.6279 21.9978 17.4587 21.8792C17.2895 21.7607 17.1139 21.5979 16.9319 21.3905C16.7499 21.183 16.5447 20.8932 16.3161 20.5208C16.0877 20.1485 15.8507 19.7084 15.6052 19.2007L15.4022 18.8324C15.2752 18.5955 15.1018 18.2506 14.8818 17.7979C14.6616 17.345 14.467 16.907 14.2978 16.4838C14.2301 16.3061 14.1285 16.1708 13.9931 16.0777L13.9296 16.0395C13.8874 16.0057 13.8196 15.9698 13.7265 15.9315C13.6334 15.8934 13.5362 15.866 13.4345 15.8491L9.95618 15.8744C9.60073 15.8744 9.35956 15.9549 9.23257 16.1157L9.18175 16.1918C9.15636 16.2342 9.14355 16.3018 9.14355 16.395C9.14355 16.4881 9.16894 16.6024 9.21977 16.7377C9.72754 17.9311 10.2797 19.082 10.8764 20.1907C11.473 21.2994 11.9914 22.1924 12.4314 22.8691C12.8715 23.5462 13.32 24.1853 13.7771 24.786C14.2341 25.3869 14.5366 25.772 14.6847 25.9412C14.8328 26.1107 14.9493 26.2374 15.0339 26.3221L15.3513 26.6267C15.5544 26.8298 15.8527 27.0731 16.2462 27.3566C16.6399 27.6402 17.0757 27.9195 17.5538 28.1947C18.0321 28.4696 18.5885 28.6939 19.2233 28.8673C19.858 29.0409 20.4758 29.1106 21.0767 29.077H22.5366C22.8327 29.0514 23.057 28.9583 23.2095 28.7976L23.26 28.734C23.294 28.6835 23.3258 28.605 23.3551 28.4994C23.3848 28.3936 23.3996 28.2771 23.3996 28.1503C23.3909 27.7865 23.4186 27.4586 23.4819 27.1666C23.5452 26.8747 23.6173 26.6547 23.698 26.5065C23.7786 26.3584 23.8696 26.2335 23.9708 26.1322C24.0723 26.0307 24.1446 25.9692 24.187 25.948C24.2291 25.9267 24.2628 25.9123 24.2882 25.9036C24.4913 25.8359 24.7303 25.9015 25.0057 26.1005C25.2808 26.2994 25.5388 26.545 25.7801 26.8369C26.0214 27.129 26.3112 27.4567 26.6496 27.8206C26.9883 28.1846 27.2844 28.4551 27.5382 28.6331L27.792 28.7854C27.9615 28.8871 28.1816 28.9802 28.4525 29.0648C28.7229 29.1494 28.9598 29.1706 29.1632 29.1283L32.4129 29.0776C32.7343 29.0776 32.9845 29.0244 33.1619 28.9188C33.3396 28.813 33.4452 28.6964 33.4793 28.5697C33.5133 28.4428 33.5151 28.2988 33.4857 28.1378C33.4556 27.9773 33.426 27.865 33.3965 27.8016Z"
+                                fill="#2B414E" />
+                        </svg>
+
+                    </div>
+                </a>
+                <!-- Сылка на ютуб -->
+                <a href="">
+                    <div>
+                        <svg class="image_footer_svg" width="45" height="45" viewBox="0 0 45 45" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle class="image_footer_svg" cx="22.0964" cy="22.0964" r="22.0964" fill="#71B482" />
+                            <path
+                                d="M34.0619 19.3821C34.0528 19.1065 34.0385 18.8322 34.0165 18.5565C33.927 17.3909 33.796 16.0566 33.0204 15.1241C32.3563 14.3268 31.3291 14.1465 30.3537 14.0357C29.1177 13.8966 27.8765 13.8129 26.634 13.7665C24.1178 13.6712 21.599 13.7266 19.0828 13.782C17.7897 13.8103 16.4966 13.8387 15.2074 13.9404C13.6251 14.0666 11.996 14.2972 11.2593 15.8672C10.5979 17.2776 10.6796 19.0679 10.6718 20.5838C10.664 21.9452 10.6588 23.3053 10.7133 24.6654C10.7846 26.43 10.8897 28.7277 12.808 29.5005C13.8313 29.914 15.0673 30.0054 16.1607 30.0762C17.3189 30.1509 18.481 30.1419 19.6418 30.1587C22.0763 30.1947 24.5095 30.111 26.9426 30.0634C28.6326 30.0299 30.368 30.0106 31.9841 29.4632C33.3796 28.9905 33.7441 27.4874 33.9335 26.184C34.1215 24.8895 34.0735 23.5758 34.0709 22.2711C34.0696 21.3102 34.0956 20.3443 34.0619 19.3821Z"
+                                fill="#2B414E" />
+                            <path class="image_footer_svg"
+                                d="M26.0631 21.9164C24.0191 20.7237 22.0191 19.5581 20.001 18.3809C20.001 20.7572 20.001 23.0923 20.001 25.4545C22.0256 24.2721 24.0256 23.1052 26.0631 21.9164Z"
+                                fill="#71B482" />
+                        </svg>
+
+                    </div>
+                </a>
+                <!-- Сылка на одноклассники -->
+                <a href="">
+                    <div>
+                        <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle class="image_footer_svg" cx="22.0964" cy="22.0964" r="22.0964" fill="#71B482" />
+                            <path
+                                d="M22.5002 13.6315C23.8247 13.6315 24.8974 14.7783 24.8974 16.1944C24.8974 17.6105 23.8247 18.7573 22.5002 18.7573C21.1756 18.7573 20.103 17.6105 20.103 16.1944C20.103 14.7783 21.1756 13.6315 22.5002 13.6315ZM22.5002 22.3888C25.6937 22.3888 28.294 19.6087 28.294 16.1944C28.294 12.7801 25.6937 10 22.5002 10C19.3067 10 16.7063 12.7801 16.7063 16.1944C16.7063 19.6087 19.3067 22.3888 22.5002 22.3888ZM24.8405 27.4364C26.035 27.1497 27.1726 26.6458 28.2046 25.9508C29.001 25.4208 29.2366 24.3001 28.741 23.4487C28.2453 22.5973 27.197 22.3453 26.4007 22.8753C24.0279 24.4738 20.9725 24.4652 18.5997 22.8753C17.8033 22.3453 16.7632 22.5973 16.2594 23.44C15.7637 24.2914 15.9994 25.4121 16.7876 25.9421C17.8196 26.6371 18.9572 27.141 20.1518 27.4277L16.9095 30.8941C16.2432 31.6065 16.2432 32.7533 16.9095 33.457C17.5758 34.1694 18.6485 34.1694 19.3067 33.457L22.5002 30.0601L25.6856 33.4657C26.3438 34.1781 27.4164 34.1781 28.0827 33.4657C28.7491 32.762 28.7491 31.6152 28.0827 30.9028L24.8405 27.4364Z"
+                                fill="#2B414E" />
+                        </svg>
+
+
+                    </div>
+                </a>
+                <!-- Сылка на телеграм -->
+                <a href="">
+                    <div>
+                        <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                            <path class="image_footer_svg"
+                                d="M22.095 44.19C34.2977 44.19 44.19 34.2977 44.19 22.095C44.19 9.89227 34.2977 0 22.095 0C9.89227 0 0 9.89227 0 22.095C0 34.2977 9.89227 44.19 22.095 44.19Z"
+                                fill="#71B482" />
+                            <path
+                                d="M9.19557 21.9035L24.0746 15.7731C25.5433 15.1345 30.5243 13.091 30.5243 13.091C30.5243 13.091 32.8232 12.197 32.6316 14.3682C32.5677 15.2622 32.0569 18.3913 31.546 21.7758L29.9495 31.8015C29.9495 31.8015 29.8218 33.2703 28.7362 33.5257C27.6506 33.7811 25.8626 32.6317 25.5433 32.3763C25.2879 32.1847 20.7539 29.3111 19.0936 27.9062C18.6466 27.523 18.1357 26.7567 19.1575 25.8627C21.4564 23.7554 24.2023 21.1372 25.8626 19.4769C26.6289 18.7106 27.3952 16.9225 24.2023 19.0937L15.1983 25.1603C15.1983 25.1603 14.1765 25.7988 12.2608 25.2241C10.345 24.6494 8.10998 23.8831 8.10998 23.8831C8.10998 23.8831 6.57737 22.9252 9.19557 21.9035Z"
+                                fill="#2B414E" />
+
+                        </svg>
+
+                    </div>
+                </a>
+
+
+
+
+            </div>
+        </div>
+
+
+        <div class="margin_top">
+            <p class="footer_text_six">ХОЧУ ПЕРВЫМ УЗНАВАТЬ <br> НОВОСТИ</p>
+            <div>
+                <form action="#">
+                    <input class="input_mail" type="text" placeholder="Введите Email">
+                    <button class="button_form_three phone_none">
+                        ПОДПИСАТЬСЯ
+                    </button>
+                </form>
+
+            </div>
+            <div class="flex footer_chek">
+                <input class="checkbox_footer" type="checkbox" id="footer_input">
+                <label for="footer_input"></label>
+                <p class="phone_text_footer_upp">Я согласен на обработку моих персональных данных</p>
+
+            </div>
+            <button class="button_form_three phone">
+                ПОДПИСАТЬСЯ
+            </button>
+            <p class="disclaimer phone_none">
+                Вся размещенная информация на сайте носит исключительно информационный характер и ни при каких условиях
+                не является публичной офертой, определяемой положениями статьи 437 ГК РФ. Визуализации объектов являются
+                ориентировочными. Застройщик вправе вносить изменения в проекты в соответствии с действующим
+                законодательством. Вся размещенная информация на сайте носит исключительно информационный характер и ни
+                при каких условиях не является публичной офертой, определяемой положениями статьи 437 ГК РФ.
+            </p>
+        </div>
+
+    </footer>
+    <script src="js/burger.js"></script>
+    <script src="js/only_up.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/script_down.js"></script>
+    <script src="js/script_modal.js"></script>
+</body>
+
+</html>
