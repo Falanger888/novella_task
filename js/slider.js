@@ -1,69 +1,52 @@
-// Достаем интересующие переменные
-var Left = document.getElementById("left");
-var Right = document.getElementById("right");
-var Slides = document.querySelectorAll(".image_slider");
-var Bottom = document.getElementById("bottom");
-// Количество слайдов
-let countSlideIndex = 0;
+(function() {
+    var Left = document.getElementById("left");
+    var Right = document.getElementById("right");
+    var Slides = document.querySelectorAll(".image_slider");
+    var Bottom = document.getElementById("bottom");
 
-// Массив пагинации
-var circkles = [];
+    if (!Left || !Right || !Slides.length || !Bottom) return;
 
+    let countSlideIndex = 0;
+    var circles = [];
 
-// Создаем круги
-function CreateCircle() {
-    var div = document.createElement("div");
-    div.className = 'circle-info';
-    Bottom.appendChild(div);
-    circkles.push(div);
-}
-
-
-function AddCircle() {
-    Slides.forEach(CreateCircle);
-    circkles[0].classList.add("active");
-}
-AddCircle();
-
-
-function addActive() {
-    circkles[countSlideIndex].classList.add('active')
-}
-function removeActive() {
-    circkles[countSlideIndex].classList.remove('active')
-}
-
-// Листаем слайды
-function SlideActive() {
-    Slides[countSlideIndex].classList.add('block-slide');
-}
-
-function SlideDeactivaed() {
-    Slides[countSlideIndex].classList.remove("block-slide");
-}
-
-
-function SlideRight() {
-    SlideDeactivaed();
-    removeActive();
-    countSlideIndex++;
-    if (countSlideIndex > Slides.length - 1) {
-        countSlideIndex = 0;
+    function CreateCircle() {
+        var div = document.createElement("div");
+        div.className = 'circle-info';
+        Bottom.appendChild(div);
+        circles.push(div);
     }
-    addActive();
-    SlideActive();
-}
 
-function SlideLeft() {
-    SlideDeactivaed();
-    removeActive();
-    countSlideIndex--;
-    if (countSlideIndex < 0) {
-        countSlideIndex = Slides.length - 1;
+    function AddCircle() {
+        Slides.forEach(CreateCircle);
+        if (circles.length > 0) circles[0].classList.add("active");
     }
-    addActive();
-    SlideActive();
-}
+    AddCircle();
 
-Right.addEventListener("click", SlideRight);
-Left.addEventListener("click", SlideLeft);
+    function updateSlider() {
+        Slides.forEach((slide, i) => {
+            if (i === countSlideIndex) {
+                slide.classList.add('block-slide');
+                circles[i].classList.add('active');
+            } else {
+                slide.classList.remove('block-slide');
+                circles[i].classList.remove('active');
+            }
+        });
+    }
+
+    Right.addEventListener("click", function() {
+        countSlideIndex++;
+        if (countSlideIndex > Slides.length - 1) {
+            countSlideIndex = 0;
+        }
+        updateSlider();
+    });
+
+    Left.addEventListener("click", function() {
+        countSlideIndex--;
+        if (countSlideIndex < 0) {
+            countSlideIndex = Slides.length - 1;
+        }
+        updateSlider();
+    });
+})();
